@@ -20,5 +20,5 @@ public class FirstPersonCam : MonoBehaviour
         currentVerticalRotation = transform.localEulerAngles.x;
     }
 
-
+   
 }

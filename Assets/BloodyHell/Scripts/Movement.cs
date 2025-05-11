@@ -71,7 +71,7 @@ public class Movement : MonoBehaviour
     #region Moving
 
 
-    private Vector3 GetMovementFromInput()
+    /*private Vector3 GetMovementFromInput()
     {
 
         Vector2 inputThisFrame = new Vector2();
@@ -82,7 +82,9 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = new Vector3(inputThisFrame.x, 0, inputThisFrame.y);
 
         // moveDirection = transform.TransformDirection(moveDirection);
-    }
+
+        
+    }*/
 
     
 
