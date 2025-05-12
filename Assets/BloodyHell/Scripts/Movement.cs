@@ -7,9 +7,11 @@ public class Movement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private CapsuleCollider capsuleCollider;
+    [SerializeField] private Camera cam;
 
     [Header("Speed")]
-    [SerializeField] private float walkSpeed;
+    [SerializeField] private float walkSpeed = 10f;
+    [SerializeField] private float sprintSpeed = 20f;
 
     [Header("Jumping")]
     [SerializeField] private float jumpPower;
@@ -34,14 +36,24 @@ public class Movement : MonoBehaviour
         switch (currentState)
         {
             case State.Walk:
+                WalkState();
                 break;
             case State.Rise:
+                RiseState();
                 break;
             case State.Fall:
-                break;
-            case State.Run:
+                FallState();
                 break;
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            walkSpeed = sprintSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            walkSpeed = 10f;
+        }       
     }
 
     private void WalkState()
@@ -143,9 +155,7 @@ public class Movement : MonoBehaviour
 
         Vector3 moveDirection = new Vector3(inputThisFrame.x, 0, inputThisFrame.y);
 
-        //transform.localEulerAngles = new Vector3(0, 0, inputThisFrame.y);
-
-        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection = cam.transform.TransformDirection(moveDirection);
 
         return moveDirection;
     }
@@ -167,4 +177,5 @@ public class Movement : MonoBehaviour
         jumpsRemaining = jumpsAllowed;
     }
 
+    
 }
