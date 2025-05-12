@@ -1,9 +1,8 @@
-using Mono.Cecil;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [Header("Refrences")]
+    [Header("References")]
     [SerializeField] LayerMask groundMask;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private CapsuleCollider capsuleCollider;
@@ -11,7 +10,10 @@ public class Movement : MonoBehaviour
 
     [Header("Speed")]
     [SerializeField] private float walkSpeed = 10f;
-    [SerializeField] private float sprintSpeed = 20f;
+    [SerializeField] private float sprintSpeed = 40;
+    [SerializeField] private bool isSprinting = false;
+    private float currentSpeed;
+    
 
     [Header("Jumping")]
     [SerializeField] private float jumpPower;
@@ -46,14 +48,16 @@ public class Movement : MonoBehaviour
                 break;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            walkSpeed = sprintSpeed;
+            isSprinting = true;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
-            walkSpeed = 10f;
-        }       
+            isSprinting = false;
+        }
+
+            currentSpeed = isSprinting ? sprintSpeed : walkSpeed;
     }
 
     private void WalkState()
@@ -65,7 +69,7 @@ public class Movement : MonoBehaviour
         Vector3 inputMovement = GetMovementFromInput();
 
         // increase our movement speed
-        inputMovement *= walkSpeed;
+        inputMovement *= currentSpeed;
 
         // as long as were on the ground dont build up vertical speed
         inputMovement.y = Mathf.Clamp(rb.linearVelocity.y - gravityDown * Time.deltaTime, 0f, float.PositiveInfinity);
@@ -94,7 +98,7 @@ public class Movement : MonoBehaviour
     private void RiseState()
     {
         Vector3 inputMovement = GetMovementFromInput();
-        inputMovement *= walkSpeed;
+        inputMovement *= currentSpeed;
 
         //were rising now so use up gravity
         inputMovement.y = rb.linearVelocity.y - gravityUp * Time.deltaTime;
@@ -117,9 +121,9 @@ public class Movement : MonoBehaviour
     private void FallState()
     {
         Vector3 inputMovement = GetMovementFromInput();
-        inputMovement *= walkSpeed;
+        inputMovement *= currentSpeed;
 
-        //were falling so use gravity down
+        //were falling now so use down gravity
         inputMovement.y = rb.linearVelocity.y - gravityDown * Time.deltaTime;
 
         rb.linearVelocity = inputMovement;
@@ -156,6 +160,19 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = new Vector3(inputThisFrame.x, 0, inputThisFrame.y);
 
         moveDirection = cam.transform.TransformDirection(moveDirection);
+
+        moveDirection.y = 0f;
+        moveDirection = moveDirection.normalized * moveDirection.magnitude;
+
+        rb.AddForce(moveDirection * currentSpeed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+
+        if (IsGrounded())
+        {
+            Vector3 goalMovement = moveDirection * currentSpeed;
+            Vector3 newVelocity = Vector3.Lerp(rb.linearVelocity, goalMovement, Time.deltaTime * 1f);
+            rb.linearVelocity = newVelocity;
+
+        }
 
         return moveDirection;
     }

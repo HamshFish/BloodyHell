@@ -96,7 +96,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479052234920522782}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1d934514ad128ba4f94bccc9f0456d3d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   walkSpeed: 10
   sprintSpeed: 20
+  isSprinting: 0
   jumpPower: 10
   gravityUp: 5
   gravityDown: 20
