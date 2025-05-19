@@ -12,17 +12,12 @@ public class DamageSource : MonoBehaviour
     {
         Standerd,
         // Bleed // Maybe
-    }
+    }  
 
     [Header("Damage")]
     [SerializeField] public int damageAmount;
     [SerializeField] private Apply apply;
     [SerializeField] private Type type;
-
-    private void Start()
-    {
-       // bloodShot = GetComponent<ShootBlood>();
-    }
 
     private void DealDamage(GameObject target)
     {

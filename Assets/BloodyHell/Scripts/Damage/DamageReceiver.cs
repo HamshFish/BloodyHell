@@ -14,6 +14,7 @@ public class DamageReceiver : MonoBehaviour
     {
         //start at full health
         currentHealth = healthMax;
+
     }
 
     public void TakeDamage(float damage)

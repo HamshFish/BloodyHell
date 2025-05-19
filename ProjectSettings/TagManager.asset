@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wisp
   - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX

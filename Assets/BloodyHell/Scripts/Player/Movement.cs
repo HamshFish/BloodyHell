@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float sprintSpeed = 40;
     [SerializeField] private bool isSprinting = false;
     private float currentSpeed;
-    
+
 
     [Header("Jumping")]
     [SerializeField] private float jumpPower;
@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
             isSprinting = false;
         }
 
-            currentSpeed = isSprinting ? sprintSpeed : walkSpeed;
+        currentSpeed = isSprinting ? sprintSpeed : walkSpeed;
     }
 
     private void WalkState()
@@ -126,7 +126,9 @@ public class Movement : MonoBehaviour
         //were falling now so use down gravity
         inputMovement.y = rb.linearVelocity.y - gravityDown * Time.deltaTime;
 
+
         rb.linearVelocity = inputMovement;
+
 
         if (IsGrounded())
         {
@@ -166,13 +168,14 @@ public class Movement : MonoBehaviour
 
         rb.AddForce(moveDirection * currentSpeed * Time.fixedDeltaTime, ForceMode.VelocityChange);
 
-        if (IsGrounded())
+       if (IsGrounded())
         {
             Vector3 goalMovement = moveDirection * currentSpeed;
             Vector3 newVelocity = Vector3.Lerp(rb.linearVelocity, goalMovement, Time.deltaTime * 1f);
             rb.linearVelocity = newVelocity;
 
         }
+
 
         return moveDirection;
     }
@@ -194,5 +197,5 @@ public class Movement : MonoBehaviour
         jumpsRemaining = jumpsAllowed;
     }
 
-    
+
 }
