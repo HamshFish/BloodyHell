@@ -38,7 +38,7 @@ public class DamageReceiver : MonoBehaviour
     {
         Debug.Log(gameObject + " has died");
 
-        //onOutOfHealth.Invoke();
+        onOutOfHealth.Invoke();
     }
 
     public float GetHealthPercent()

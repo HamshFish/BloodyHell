@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7469151533436244594}
   - component: {fileID: 2061306720391646562}
   - component: {fileID: 6166150914505519513}
+  - component: {fileID: 3449967279856420460}
   m_Layer: 0
   m_Name: BloodAttack
   m_TagString: Untagged
@@ -81,7 +82,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -3714,7 +3715,7 @@ ParticleSystem:
     serializedVersion: 4
     type: 1
     collisionMode: 0
-    colliderForce: 1
+    colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
@@ -3775,7 +3776,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3828,7 +3829,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3879,15 +3880,15 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     minKillSpeed: 0
-    maxKillSpeed: 1
+    maxKillSpeed: 100000
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 327
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -4936,6 +4937,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cac88cdda0fa84a8881281f580c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 1
   apply: 0
   type: 0
-  damageAmount: 1
+--- !u!114 &3449967279856420460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974435078010946474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5779fdad7810d86499098a6db3d994f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
