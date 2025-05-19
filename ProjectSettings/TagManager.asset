@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wisp
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - Ground
   - Hands
-  - 
-  - 
+  - Enemy
+  - Wisp
   - 
   - 
   - 
