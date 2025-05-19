@@ -9,7 +9,7 @@ PhysicsMaterial:
   m_Name: NonStick
   serializedVersion: 2
   m_DynamicFriction: 0
-  m_StaticFriction: 0
-  m_Bounciness: 0.0001
-  m_FrictionCombine: 0
-  m_BounceCombine: 0
+  m_StaticFriction: 0.05
+  m_Bounciness: 0
+  m_FrictionCombine: 1
+  m_BounceCombine: 1
