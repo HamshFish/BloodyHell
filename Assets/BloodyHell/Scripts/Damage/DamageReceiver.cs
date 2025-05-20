@@ -3,9 +3,16 @@ using UnityEngine.Events;
 
 public class DamageReceiver : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private Renderer render;
+
     [Header("Health")]
     [SerializeField] private float healthMax;
-    [SerializeField] private float currentHealth;
+    [SerializeField] public float currentHealth;
+
+    private Color _100health = Color.green;
+    private Color _25health = Color.red;
+
 
     public UnityEvent onOutOfHealth;
 
@@ -22,8 +29,11 @@ public class DamageReceiver : MonoBehaviour
         // our new health after taking damage is our old health - damage, not going below 0
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, healthMax);
 
+        Color color = Color.Lerp(_25health, _100health, GetHealthPercent());
+        render.material.color = color;
+
         // if we run out of health
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Debug.Log("running end of life");
             EndOfLife();
@@ -46,4 +56,5 @@ public class DamageReceiver : MonoBehaviour
     {
         return currentHealth / healthMax;
     }
+
 }
