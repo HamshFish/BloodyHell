@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class FirstPersonCam : MonoBehaviour
 {
@@ -45,5 +46,8 @@ public class FirstPersonCam : MonoBehaviour
         transform.position = playerTransform.position;
         //go to the eyes
         transform.position += Vector3.up * playerEyeOffset;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
