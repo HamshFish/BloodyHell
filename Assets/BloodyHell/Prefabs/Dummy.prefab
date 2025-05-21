@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6386548948643170243}
   - component: {fileID: 8847083090703809942}
   - component: {fileID: 2527950839028704538}
+  - component: {fileID: 2202900153845331733}
   m_Layer: 8
   m_Name: Dummy
   m_TagString: Untagged
@@ -125,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  render: {fileID: 2639948965971995901}
   healthMax: 100
   currentHealth: 0
   onOutOfHealth:
@@ -185,3 +185,45 @@ MonoBehaviour:
   damageAmount: 10
   apply: 0
   type: 0
+--- !u!114 &2202900153845331733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425066111318427963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24efa0c5da80e2741aee0aa8f7970d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0.9315591, b: 0, a: 1}
+    key2: {r: 0.94499123, g: 0.9382356, b: 0, a: 0}
+    key3: {r: 0.43610525, g: 1, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 17926
+    ctime1: 32382
+    ctime2: 39707
+    ctime3: 65535
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 2
