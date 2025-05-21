@@ -30,9 +30,9 @@ public class ShootBlood : MonoBehaviour
         if(damageReceiver.currentHealth >= 20)
         {
             RollD20();
-            ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f));
+            ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
             damage = FindAnyObjectByType<DamageSource>();
-            shootPower = d20Rolls[roll];
+            shootPower = d20Rolls[roll]; // put roll into damage
             damage.damageAmount = shootPower;
             damageReceiver.TakeDamage(30);
         }
