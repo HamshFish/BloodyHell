@@ -1,15 +1,20 @@
 using UnityEngine;
-
+using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private Transform target;
-    [SerializeField] private Rigidbody rb;
+    public GameObject moveToObject;
+    private NavMeshAgent agent;
 
-    private void Update()
+    void Start()
     {
-        transform.LookAt(target);
+        agent = GetComponent<NavMeshAgent>();
+    }
 
-        rb.linearVelocity = new Vector3(1, 0);
+    void Update()
+    {
+        if (agent != null && moveToObject != null)
+        {
+            agent.destination = moveToObject.transform.position;
+        }
     }
 }
