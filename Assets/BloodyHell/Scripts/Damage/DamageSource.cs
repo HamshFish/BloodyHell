@@ -28,7 +28,7 @@ public class DamageSource : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         DealDamage(collision.gameObject);
     }
