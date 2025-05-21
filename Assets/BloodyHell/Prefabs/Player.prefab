@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 725905329048904886}
   - component: {fileID: 3127493443468585666}
   - component: {fileID: 7654150865901123597}
+  - component: {fileID: 6513295441956661199}
   m_Layer: 0
   m_Name: AbilityHand
   m_TagString: Untagged
@@ -425,13 +426,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bloodGO: {fileID: 2640637541376924839, guid: 183a7ac886612cf4aa09ee06d3639a80, type: 3}
-  damageReceiver: {fileID: 0}
+  damageReceiver: {fileID: 1073665548808369956}
   shootPower: 0
   roll: 0
   shootSpeed: 0
   minRoll: 1
   maxRoll: 20
   d20Rolls: 0000000000000000010000000c000000100000001a0000001e000000240000002a000000320000003c00000041000000460000004b0000005000000054000000570000006300000078000000fa0000002c010000
+--- !u!114 &6513295441956661199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4299707012486310347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 3.402823e+38
+  currentHealth: 0
+  onOutOfHealth:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &4492022473281659265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969756640049445442}
+  m_Layer: 10
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969756640049445442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4492022473281659265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.015, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7391674259485442281}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5508765278006719871
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +510,7 @@ Transform:
   m_GameObject: {fileID: 5508765278006719871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.541, z: 0}
+  m_LocalPosition: {x: 0, y: 0.392, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -628,6 +677,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6280932007181726391}
+  - {fileID: 1969756640049445442}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1014546968334883619
@@ -748,6 +798,7 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  groundCheck: {fileID: 1969756640049445442}
   rb: {fileID: 2348166104313457643}
   capsuleCollider: {fileID: 8534806888102310283}
   cam: {fileID: 3338258677249317740}

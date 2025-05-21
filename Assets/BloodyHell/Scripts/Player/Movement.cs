@@ -4,6 +4,7 @@ public class Movement : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] LayerMask groundMask;
+    [SerializeField] Transform groundCheck;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private CapsuleCollider capsuleCollider;
     [SerializeField] private Camera cam;
@@ -183,7 +184,8 @@ public class Movement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, Vector3.down, capsuleCollider.height / 2f + 0.1f, groundMask);
+        return Physics.OverlapSphere(groundCheck.position, 0.1f,groundMask).Length > 0;
+        
     }
 
     private void Start()
