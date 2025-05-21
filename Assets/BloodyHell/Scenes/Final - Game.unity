@@ -1513,31 +1513,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 705466753}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalScale.x
-      value: 22.524845
+      value: 13.915391
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalScale.y
-      value: 330.94397
+      value: 204.45045
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalScale.z
-      value: 73.15451
+      value: 45.193367
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 354.31
+      value: 0.061781738
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.15
+      value: 8.469759
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 596.6
+      value: -9.598737
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1573,7 +1573,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8788a3c068eb6cb43b85cd9c32226bb8, type: 2}
     - target: {fileID: 919132149155446097, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
       propertyPath: m_Name
-      value: cross
+      value: Church_Cross
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5228,6 +5228,8 @@ Transform:
   - {fileID: 359762623}
   - {fileID: 520981946}
   - {fileID: 2137324682}
+  - {fileID: 1202569461}
+  - {fileID: 1945921581}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
@@ -6824,6 +6826,11 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!4 &1202569461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 28275a7e9f299d8448b839c2b03b6a48, type: 3}
+  m_PrefabInstance: {fileID: 246640174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1227573241
 Mesh:
   m_ObjectHideFlags: 0
@@ -14629,7 +14636,7 @@ GameObject:
   - component: {fileID: 1945921577}
   - component: {fileID: 1945921576}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Church_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14905,11 +14912,11 @@ Transform:
   m_GameObject: {fileID: 1945921575}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5137135, y: -0.4905739, z: 0.49379992, w: 0.50159484}
-  m_LocalPosition: {x: 354.48, y: 2.35, z: 596.34}
-  m_LocalScale: {x: 1, y: 1, z: 1.3981}
+  m_LocalPosition: {x: 0.16681258, y: -2.5267189, z: -9.759328}
+  m_LocalScale: {x: 0.6177797, y: 0.6177796, z: 0.8637177}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 705466753}
   m_LocalEulerAnglesHint: {x: -1.769, y: -90.523, z: 90.887}
 --- !u!43 &1964577530
 Mesh:
@@ -15770,5 +15777,3 @@ SceneRoots:
   - {fileID: 204526807}
   - {fileID: 1874880813}
   - {fileID: 705466753}
-  - {fileID: 1945921581}
-  - {fileID: 246640174}
