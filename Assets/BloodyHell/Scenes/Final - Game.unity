@@ -4702,6 +4702,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dummy
       objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.ctime0
+      value: 17926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.ctime1
+      value: 32382
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.ctime2
+      value: 39707
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.ctime3
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.key2.g
+      value: 0.9382356
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.key2.r
+      value: 0.94499123
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.key3.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.key3.r
+      value: 0.43610525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202900153845331733, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: gradient.m_NumColorKeys
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386548948643170243, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+      propertyPath: healthMax
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
