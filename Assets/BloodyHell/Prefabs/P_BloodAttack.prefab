@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7469151533436244594}
   - component: {fileID: 2061306720391646562}
   - component: {fileID: 6166150914505519513}
+  - component: {fileID: 6954842146652062990}
   - component: {fileID: 3449967279856420460}
   m_Layer: 0
   m_Name: BloodAttack
@@ -4937,10 +4938,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cac88cdda0fa84a8881281f580c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodSplatPrefab: {fileID: 1776965013949701060, guid: fdcfb83aedddee84ba14008ddba7dde6, type: 3}
   damageAmount: 1
   apply: 0
   type: 0
+--- !u!114 &6954842146652062990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974435078010946474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bc2403f2f12f74083d782ba5d59192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3449967279856420460
 MonoBehaviour:
   m_ObjectHideFlags: 0

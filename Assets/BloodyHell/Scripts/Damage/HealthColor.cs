@@ -13,11 +13,6 @@ public class HealthColor : MonoBehaviour
         damage = GetComponent<DamageReceiver>();
     }
 
-    private void Update()
-    {
-        Apply();
-    }
-
     public void Apply()
     {
         render.material.color = gradient.Evaluate(damage.GetHealthPercent());

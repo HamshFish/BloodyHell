@@ -29,11 +29,13 @@ public class ShootBlood : MonoBehaviour
     {
         if(damageReceiver.currentHealth >= 30)
         {
+            //Debug.Log("Rolling D20");
             RollD20();
-            ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
-            damage = FindAnyObjectByType<DamageSource>();
+            //Debug.Log("setting shoot power to roll");
             shootPower = d20Rolls[roll]; // put roll into damage
-            damage.damageAmount = shootPower;
+            //Debug.Log("spawning particle");
+            ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
+            //Debug.Log("taking self damage");
             damageReceiver.TakeDamage(30);
         }
         
@@ -51,7 +53,7 @@ public class ShootBlood : MonoBehaviour
     private void RollD20()
     {
         roll = Random.Range(minRoll, maxRoll);
-        Debug.Log("D20 Rolled");
+        //Debug.Log("D20 Rolled");
     }
 
     

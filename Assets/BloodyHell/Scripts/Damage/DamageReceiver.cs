@@ -5,7 +5,7 @@ public class DamageReceiver : MonoBehaviour
 {
     //[Header("References")]
     //[SerializeField] private Renderer render;
-    private HealthColor healthColor;
+    [SerializeField] private HealthColor healthColor;
 
     [Header("Health")]
     [SerializeField] private float healthMax;
@@ -22,8 +22,6 @@ public class DamageReceiver : MonoBehaviour
     {
         //start at full health
         currentHealth = healthMax;
-
-        healthColor = GetComponent<HealthColor>();
 
     }
 

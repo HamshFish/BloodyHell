@@ -445,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthColor: {fileID: 0}
   healthMax: 3.402823e+38
   currentHealth: 0
   onOutOfHealth:
@@ -822,6 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthColor: {fileID: 7666816291424277483}
   healthMax: 250
   currentHealth: 0
   onOutOfHealth:
