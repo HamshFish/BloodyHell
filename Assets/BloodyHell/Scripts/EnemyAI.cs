@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
@@ -8,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        moveToObject = GameObject.Find("Player");
     }
 
     void Update()

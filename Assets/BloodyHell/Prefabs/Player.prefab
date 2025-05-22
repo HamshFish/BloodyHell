@@ -802,8 +802,8 @@ MonoBehaviour:
   rb: {fileID: 2348166104313457643}
   capsuleCollider: {fileID: 8534806888102310283}
   cam: {fileID: 3338258677249317740}
-  walkSpeed: 10
-  sprintSpeed: 25
+  walkSpeed: 5
+  sprintSpeed: 10
   isSprinting: 0
   jumpPower: 10
   gravityUp: 15
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthMax: 100
+  healthMax: 250
   currentHealth: 0
   onOutOfHealth:
     m_PersistentCalls:
