@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 2527950839028704538}
   - component: {fileID: 2202900153845331733}
   - component: {fileID: 5735101788575675938}
-  - component: {fileID: 2858025840709310092}
+  - component: {fileID: 3744771918937970455}
   m_Layer: 8
   m_Name: Dummy
   m_TagString: Untagged
@@ -146,6 +146,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3744771918937970455}
+        m_TargetAssemblyTypeName: OnEnemyDeath, Assembly-CSharp
+        m_MethodName: SpawnWisp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!54 &8847083090703809942
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -265,7 +277,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2858025840709310092
+--- !u!114 &3744771918937970455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
