@@ -802,8 +802,8 @@ MonoBehaviour:
   rb: {fileID: 2348166104313457643}
   capsuleCollider: {fileID: 8534806888102310283}
   cam: {fileID: 3338258677249317740}
-  walkSpeed: 10
-  sprintSpeed: 25
+  walkSpeed: 5
+  sprintSpeed: 10
   isSprinting: 0
   jumpPower: 10
   gravityUp: 15

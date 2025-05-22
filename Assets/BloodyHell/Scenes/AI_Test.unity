@@ -297,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7391674259485442281, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: 1.021
       objectReference: {fileID: 0}
     - target: {fileID: 7391674259485442281, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 1083229826}
   - component: {fileID: 1083229825}
   - component: {fileID: 1083229824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pub room (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 1122485309}
   - component: {fileID: 1122485313}
   - component: {fileID: 1122485312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122485308}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
@@ -1887,7 +1887,7 @@ GameObject:
   - component: {fileID: 1150879491}
   - component: {fileID: 1150879490}
   - component: {fileID: 1150879489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pub room (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2367,7 +2367,7 @@ GameObject:
   - component: {fileID: 1232164966}
   - component: {fileID: 1232164965}
   - component: {fileID: 1232164964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3816,7 +3816,7 @@ GameObject:
   - component: {fileID: 1864889512}
   - component: {fileID: 1864889511}
   - component: {fileID: 1864889510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pub room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
