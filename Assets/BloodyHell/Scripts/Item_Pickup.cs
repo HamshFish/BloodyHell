@@ -15,7 +15,7 @@ public class Item_Pickup : MonoBehaviour
         if (other.gameObject.tag == "Wisp")
         {
             Debug.Log("Wisp infused.");
-            damageReceiver.Heal(20);
+            damageReceiver.Heal(100);
             Destroy(other.gameObject);
         }
     }

@@ -27,7 +27,7 @@ public class ShootBlood : MonoBehaviour
 
     private void Projectile()
     {
-        if(damageReceiver.currentHealth >= 20)
+        if(damageReceiver.currentHealth >= 30)
         {
             RollD20();
             ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
