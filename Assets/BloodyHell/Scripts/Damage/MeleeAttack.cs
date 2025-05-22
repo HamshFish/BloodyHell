@@ -1,16 +1,27 @@
+using System.Collections;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject weapon;
+    [SerializeField] private float attackSpeed;
+    [SerializeField] private bool canAttack = true;
+
+    private void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1) && canAttack == true)
+        {
+            StartCoroutine(Attacking());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator Attacking()
     {
-        
+        canAttack = false;
+        weapon.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        weapon.SetActive(false);
+        yield return new WaitForSeconds(attackSpeed);
+        canAttack = true;
     }
 }

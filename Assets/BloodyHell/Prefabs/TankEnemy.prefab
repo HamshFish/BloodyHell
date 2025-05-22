@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthColor: {fileID: 2202900153845331733}
-  healthMax: 5000
+  healthMax: 2000
   currentHealth: 0
   onOutOfHealth:
     m_PersistentCalls:

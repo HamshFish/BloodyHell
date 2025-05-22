@@ -20,7 +20,7 @@ public class HealthBar : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            damageReceiver.Heal(20);
+            damageReceiver.Heal(100);
         }
     }
 }
