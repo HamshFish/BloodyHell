@@ -14,8 +14,10 @@ GameObject:
   - component: {fileID: 6789913419952475312}
   - component: {fileID: 6386548948643170243}
   - component: {fileID: 8847083090703809942}
+  - component: {fileID: 6187062698551727759}
   - component: {fileID: 2527950839028704538}
   - component: {fileID: 2202900153845331733}
+  - component: {fileID: 5735101788575675938}
   m_Layer: 8
   m_Name: Dummy
   m_TagString: Untagged
@@ -170,6 +172,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &6187062698551727759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425066111318427963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd3e2a4c5330b24d9d567bf226f3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToObject: {fileID: 0}
 --- !u!114 &2527950839028704538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,16 +216,16 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 0.3962264, g: 0, b: 0, a: 1}
     key1: {r: 1, g: 0, b: 0, a: 1}
-    key2: {r: 1, g: 0.9315591, b: 0, a: 0}
-    key3: {r: 0.94499123, g: 0.9382356, b: 0, a: 0}
+    key2: {r: 0.94499123, g: 0.9382356, b: 0, a: 0}
+    key3: {r: 0.43610525, g: 1, b: 0, a: 0}
     key4: {r: 0.43610525, g: 1, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 5975
-    ctime1: 17926
-    ctime2: 32382
-    ctime3: 39707
+    ctime0: 17926
+    ctime1: 32382
+    ctime2: 39707
+    ctime3: 65535
     ctime4: 65535
     ctime5: 0
     ctime6: 0
@@ -225,5 +240,27 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: -1
-    m_NumColorKeys: 5
+    m_NumColorKeys: 4
     m_NumAlphaKeys: 2
+--- !u!195 &5735101788575675938
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425066111318427963}
+  m_Enabled: 1
+  m_AgentTypeID: -1372625422
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
