@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
 
         enemySpeed = Random.Range(0, 4);
         agent.speed = speedlist[enemySpeed];
+
     }
 
     void Update()
