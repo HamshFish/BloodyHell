@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class DamageReceiver : MonoBehaviour
 {
@@ -57,4 +58,19 @@ public class DamageReceiver : MonoBehaviour
         return currentHealth / healthMax;
     }
 
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
+
+    public void BossDeath()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void PlayerDeath()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
