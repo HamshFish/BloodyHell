@@ -7463,6 +7463,17 @@ Transform:
   - {fileID: 1344446015}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &685192814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9179393658421174739, guid: 004850dea02f41e409b58cafe12d7fde, type: 3}
+  m_PrefabInstance: {fileID: 2114661585}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705466747
 GameObject:
   m_ObjectHideFlags: 0
@@ -10742,7 +10753,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: ce841c77e8d73164398fa861f08d74b2, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: a64e2892ec10973408e7996eb762afee, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1142005238
 GameObject:
@@ -12502,10 +12513,14 @@ PrefabInstance:
     - target: {fileID: 5963396575237271513, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: staminaBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 685192814}
     - target: {fileID: 6339867961285041896, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339867961285041896, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7391674259485442281, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12513,7 +12528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7391674259485442281, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.05
+      value: 10.25
       objectReference: {fileID: 0}
     - target: {fileID: 7391674259485442281, guid: a0d126ec3740add439ab213089e445d9, type: 3}
       propertyPath: m_LocalPosition.z

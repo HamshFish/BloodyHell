@@ -36,7 +36,7 @@ public class ShootBlood : MonoBehaviour
             //Debug.Log("spawning particle");
             ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
             //Debug.Log("taking self damage");
-            damageReceiver.TakeDamage(30);
+            damageReceiver.TakeSelfDamage(30);
         }
         
     }

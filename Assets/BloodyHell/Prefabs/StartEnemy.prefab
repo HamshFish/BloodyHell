@@ -227,8 +227,16 @@ MonoBehaviour:
   moveToObject: {fileID: 425066111318427963}
   speedlist:
   - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 6
+  - 6
   - 6
   - 7
+  - 7
+  - 9
   - 9
   - 12
   enemySpeed: 0
@@ -244,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cac88cdda0fa84a8881281f580c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wispBossChance: []
   damageAmount: 1
   apply: 0
   type: 0
@@ -608,6 +617,8 @@ MonoBehaviour:
   wisp: {fileID: 3087481702883952580, guid: 3dd3cab22da44f146b14c05a7566ffa5, type: 3}
   enemys:
   - {fileID: 425066111318427963, guid: 73a0bd188f7234746a79a8b04da4415a, type: 3}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}
   extraEnemyChance:

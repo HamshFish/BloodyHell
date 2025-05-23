@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         moveToObject = GameObject.Find("Player");
 
-        enemySpeed = Random.Range(0, 4);
+        enemySpeed = Random.Range(0, speedlist.Length);
         agent.speed = speedlist[enemySpeed];
 
     }

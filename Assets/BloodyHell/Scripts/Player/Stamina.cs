@@ -45,7 +45,7 @@ public class Stamina : MonoBehaviour
 
         if (!isSprinting)
         {
-            if(currentStamina <= maxStamina - 0.01)
+            if(currentStamina <= maxStamina)
             {
                 currentStamina += staminaRegen * Time.deltaTime;
 

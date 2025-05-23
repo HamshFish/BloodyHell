@@ -12,7 +12,9 @@ public class DamageSource : MonoBehaviour
     {
         Standerd,
         // Bleed // Maybe
-    }  
+    }
+
+    [SerializeField] private GameObject[] wispBossChance;
 
     [Header("Damage")]
     [SerializeField] public int damageAmount;
