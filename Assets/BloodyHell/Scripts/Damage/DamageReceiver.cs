@@ -41,6 +41,14 @@ public class DamageReceiver : MonoBehaviour
         }
     }
 
+    public void TakeSelfDamage(float damage)
+    {
+        // our new health after taking damage is our old health - damage, not going below 0
+        currentHealth = Mathf.Clamp(currentHealth - damage, 20, healthMax);
+
+        healthColor.Apply();
+    }
+
     public void Heal(float amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, healthMax);

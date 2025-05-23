@@ -433,7 +433,7 @@ MonoBehaviour:
   shootSpeed: 0
   minRoll: 1
   maxRoll: 20
-  d20Rolls: 0000000000000000010000000c000000100000001a0000001e000000240000002a000000320000003c00000041000000460000004b0000005000000054000000570000006300000078000000fa0000002c010000
+  d20Rolls: 0000000000000000010000000c000000100000001a0000001e000000240000002a000000320000003c00000041000000460000004b0000005000000054000000570000006300000078000000fa000000e8030000
 --- !u!114 &6513295441956661199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2b25a78d9797346afaabbdcde059a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthColor: {fileID: 0}
+  healthColor: {fileID: 7666816291424277483}
   healthMax: 3.402823e+38
   currentHealth: 0
   onOutOfHealth:
@@ -778,11 +778,13 @@ GameObject:
   - component: {fileID: 7340382893918667523}
   - component: {fileID: 8534806888102310283}
   - component: {fileID: 2348166104313457643}
+  - component: {fileID: 5963396575237271513}
   - component: {fileID: 211750516760725829}
   - component: {fileID: 1073665548808369956}
   - component: {fileID: 8101208164268653349}
   - component: {fileID: 7666816291424277483}
   - component: {fileID: 3608192871882494478}
+  - component: {fileID: 2333793536582196529}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -910,6 +912,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &5963396575237271513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339867961285041896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e33ffb71592747246b176392176cca66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 211750516760725829}
+  staminaBar: {fileID: 0}
+  maxStamina: 100
+  currentStamina: 0
+  hasRegenerated: 1
+  isSprinting: 0
+  staminaDrain: 30
+  staminaRegen: 25
 --- !u!114 &211750516760725829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +953,7 @@ MonoBehaviour:
   cam: {fileID: 3338258677249317740}
   walkSpeed: 5
   sprintSpeed: 10
-  isSprinting: 0
+  currentSpeed: 0
   jumpPower: 10
   gravityUp: 15
   gravityDown: 20
@@ -955,10 +977,10 @@ MonoBehaviour:
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073665548808369956}
-        m_TargetAssemblyTypeName: DamageReceiver, Assembly-CSharp
-        m_MethodName: PlayerDeath
-        m_Mode: 1
+      - m_Target: {fileID: 2333793536582196529}
+        m_TargetAssemblyTypeName: Scene_Load, Assembly-CSharp
+        m_MethodName: LoadSceneByBuildIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1036,6 +1058,18 @@ MonoBehaviour:
   weapon: {fileID: 6168821062159727253}
   attackSpeed: 1
   canAttack: 1
+--- !u!114 &2333793536582196529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339867961285041896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9002b544c9a92d549ba12aa7fe453d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7240980839627570268
 GameObject:
   m_ObjectHideFlags: 0
