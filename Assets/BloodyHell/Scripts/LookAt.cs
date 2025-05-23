@@ -11,7 +11,9 @@ public class LookAt : MonoBehaviour
 
     private void Update()
     {
-        transform.LookAt(player.transform);
+
+            gameObject.SetActive(true);
+            transform.LookAt(player.transform);
     }
 
 
