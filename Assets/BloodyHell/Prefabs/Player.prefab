@@ -783,6 +783,7 @@ GameObject:
   - component: {fileID: 8101208164268653349}
   - component: {fileID: 7666816291424277483}
   - component: {fileID: 3608192871882494478}
+  - component: {fileID: 2333793536582196529}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -955,10 +956,10 @@ MonoBehaviour:
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1073665548808369956}
-        m_TargetAssemblyTypeName: DamageReceiver, Assembly-CSharp
-        m_MethodName: PlayerDeath
-        m_Mode: 1
+      - m_Target: {fileID: 2333793536582196529}
+        m_TargetAssemblyTypeName: Scene_Load, Assembly-CSharp
+        m_MethodName: LoadSceneByBuildIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1036,6 +1037,18 @@ MonoBehaviour:
   weapon: {fileID: 6168821062159727253}
   attackSpeed: 1
   canAttack: 1
+--- !u!114 &2333793536582196529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339867961285041896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9002b544c9a92d549ba12aa7fe453d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7240980839627570268
 GameObject:
   m_ObjectHideFlags: 0

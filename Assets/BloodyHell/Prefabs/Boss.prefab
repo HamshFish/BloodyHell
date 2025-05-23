@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6789913419952475312}
   - component: {fileID: 6386548948643170243}
   - component: {fileID: 8847083090703809942}
+  - component: {fileID: 8784242938609116320}
   - component: {fileID: 6187062698551727759}
   - component: {fileID: 2527950839028704538}
   - component: {fileID: 2202900153845331733}
@@ -136,10 +137,10 @@ MonoBehaviour:
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6386548948643170243}
-        m_TargetAssemblyTypeName: DamageReceiver, Assembly-CSharp
-        m_MethodName: BossDeath
-        m_Mode: 1
+      - m_Target: {fileID: 8784242938609116320}
+        m_TargetAssemblyTypeName: Scene_Load, Assembly-CSharp
+        m_MethodName: LoadSceneByBuildIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -175,6 +176,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &8784242938609116320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425066111318427963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9002b544c9a92d549ba12aa7fe453d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6187062698551727759
 MonoBehaviour:
   m_ObjectHideFlags: 0
