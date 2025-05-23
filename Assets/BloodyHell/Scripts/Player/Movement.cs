@@ -151,6 +151,11 @@ public class Movement : MonoBehaviour
 
         Vector3 moveDirection = new Vector3(inputThisFrame.x, 0, inputThisFrame.y);
 
+        if(moveDirection != Vector3.zero)
+        {
+            moveDirection.Normalize();
+        }
+
         moveDirection = cam.transform.TransformDirection(moveDirection);
 
         moveDirection.y = 0f;
