@@ -10,10 +10,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private Camera cam;
 
     [Header("Speed")]
-    [SerializeField] private float walkSpeed = 10f;
-    [SerializeField] private float sprintSpeed = 40;
-    [SerializeField] private bool isSprinting = false;
-    private float currentSpeed;
+    [SerializeField] public float walkSpeed = 10f;
+    [SerializeField] public float sprintSpeed = 40;
+    public float currentSpeed;
 
 
     [Header("Jumping")]
@@ -49,16 +48,6 @@ public class Movement : MonoBehaviour
                 break;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            isSprinting = true;
-        }
-        else
-        {
-            isSprinting = false;
-        }
-
-        currentSpeed = isSprinting ? sprintSpeed : walkSpeed;
     }
 
     private void WalkState()

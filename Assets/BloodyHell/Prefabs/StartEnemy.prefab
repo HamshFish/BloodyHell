@@ -161,6 +161,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8713424867105955824}
+        m_TargetAssemblyTypeName: OnEnemyDeath, Assembly-CSharp
+        m_MethodName: SpawnExtraEnemy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6386548948643170243}
         m_TargetAssemblyTypeName: DamageReceiver, Assembly-CSharp
         m_MethodName: DestroySelf
@@ -249,21 +261,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gradient:
     serializedVersion: 2
-    key0: {r: 0.46648708, g: 0.9963125, b: 0, a: 1}
+    key0: {r: 0.24528301, g: 0, b: 0, a: 1}
     key1: {r: 0.3962264, g: 0, b: 0, a: 1}
-    key2: {r: 0.3962264, g: 0, b: 0, a: 0}
-    key3: {r: 1, g: 0, b: 0, a: 0}
-    key4: {r: 0.94854164, g: 0.87767893, b: 0, a: 0}
-    key5: {r: 0.94499123, g: 0.9382356, b: 0, a: 0}
-    key6: {r: 0.43610525, g: 1, b: 0, a: 0}
+    key2: {r: 1, g: 0, b: 0, a: 0}
+    key3: {r: 0.94854164, g: 0.87767893, b: 0, a: 0}
+    key4: {r: 0.94499123, g: 0.9382356, b: 0, a: 0}
+    key5: {r: 0.43610525, g: 1, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 386
-    ctime1: 771
-    ctime2: 10601
-    ctime3: 21781
-    ctime4: 42983
-    ctime5: 48380
-    ctime6: 65535
+    ctime0: 771
+    ctime1: 10601
+    ctime2: 21781
+    ctime3: 42983
+    ctime4: 48380
+    ctime5: 65535
+    ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
@@ -275,7 +287,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: -1
-    m_NumColorKeys: 7
+    m_NumColorKeys: 6
     m_NumAlphaKeys: 2
 --- !u!195 &5735101788575675938
 NavMeshAgent:
@@ -598,3 +610,7 @@ MonoBehaviour:
   - {fileID: 425066111318427963, guid: 73a0bd188f7234746a79a8b04da4415a, type: 3}
   - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}
+  extraEnemyChance:
+  - {fileID: 425066111318427963}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
