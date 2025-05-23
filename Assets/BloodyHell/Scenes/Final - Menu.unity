@@ -458,7 +458,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 123855194}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 401437706}
+        m_TargetAssemblyTypeName: Quit_Game, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &123855194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,6 +794,8 @@ GameObject:
   - component: {fileID: 401437703}
   - component: {fileID: 401437702}
   - component: {fileID: 401437701}
+  - component: {fileID: 401437705}
+  - component: {fileID: 401437706}
   m_Layer: 5
   m_Name: Main_Menu
   m_TagString: Untagged
@@ -873,6 +887,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &401437705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401437700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9002b544c9a92d549ba12aa7fe453d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &401437706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401437700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a957b632cac3bb4c93aecfde8ab475d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1878017991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 401437705}
+        m_TargetAssemblyTypeName: Scene_Load, Assembly-CSharp
+        m_MethodName: LoadSceneByBuildIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1878017991
 MonoBehaviour:
   m_ObjectHideFlags: 0
