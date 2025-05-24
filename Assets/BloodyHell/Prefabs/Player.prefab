@@ -762,6 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cac88cdda0fa84a8881281f580c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wispBossChance: []
   damageAmount: 50
   apply: 0
   type: 0
