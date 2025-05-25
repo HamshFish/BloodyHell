@@ -908,7 +908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 211750516760725829}
   staminaBar: {fileID: 0}
-  maxStamina: 100
+  maxStamina: 200
   currentStamina: 0
   hasRegenerated: 1
   isSprinting: 0

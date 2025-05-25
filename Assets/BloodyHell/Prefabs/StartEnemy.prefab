@@ -261,6 +261,7 @@ MonoBehaviour:
   - 9
   - 9
   enemySpeed: 0
+  isPlayerClose: 0
 --- !u!114 &2527950839028704538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,5 +645,12 @@ MonoBehaviour:
   - {fileID: 425066111318427963}
   extraEnemyChance:
   - {fileID: 425066111318427963}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
