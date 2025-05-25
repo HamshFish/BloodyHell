@@ -7,6 +7,7 @@ public class LookAt : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
+        gameObject.SetActive(false);
     }
 
     private void Update()
