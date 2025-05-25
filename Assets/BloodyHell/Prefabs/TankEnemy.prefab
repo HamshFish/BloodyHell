@@ -215,10 +215,6 @@ MonoBehaviour:
   moveToObject: {fileID: 425066111318427963}
   speedlist:
   - 3
-  - 3
-  - 3
-  - 3
-  - 3
   enemySpeed: 0
 --- !u!114 &2527950839028704538
 MonoBehaviour:
@@ -605,3 +601,4 @@ MonoBehaviour:
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
+  extraEnemyChance: []
