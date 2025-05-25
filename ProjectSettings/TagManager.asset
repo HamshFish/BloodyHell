@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Wisp
-  - Boss
+  - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX

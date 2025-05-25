@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sys32/Duped Stuff/New Terrain 1.asset.meta
 guid: 6e6e04ea29592f44da939d977d322a74
+=======
+guid: c6ef1d96675bee340b146b4984d50907
+>>>>>>> parent of a3c7ea3 (Merge branch 'main' of https://github.com/HamshFish/BloodyHell):Assets/BloodyHell/Scenes/Beta Game/NavMesh-Terrain.asset.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 15600000
