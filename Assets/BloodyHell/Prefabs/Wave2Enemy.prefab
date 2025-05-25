@@ -163,42 +163,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8713424867105955824}
-        m_TargetAssemblyTypeName: OnEnemyDeath, Assembly-CSharp
-        m_MethodName: SpawnExtraEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8713424867105955824}
-        m_TargetAssemblyTypeName: OnEnemyDeath, Assembly-CSharp
-        m_MethodName: SpawnExtraEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8713424867105955824}
-        m_TargetAssemblyTypeName: OnEnemyDeath, Assembly-CSharp
-        m_MethodName: SpawnExtraEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 6386548948643170243}
         m_TargetAssemblyTypeName: DamageReceiver, Assembly-CSharp
         m_MethodName: DestroySelf
@@ -743,9 +707,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d112f49df8399f44b463a4c5a3b33e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wisp: {fileID: 3087481702883952580, guid: 3dd3cab22da44f146b14c05a7566ffa5, type: 3}
+  wisp: {fileID: 3087481702883952580, guid: 5de607c4b2fb2b84197056b824b7e1ea, type: 3}
   enemys:
   - {fileID: 425066111318427963, guid: 4010899838c97964197003d31213c159, type: 3}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}
   - {fileID: 425066111318427963}

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wisp
   - Boss
+  - Wisp2
   layers:
   - Default
   - TransparentFX
