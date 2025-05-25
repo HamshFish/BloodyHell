@@ -216,6 +216,7 @@ MonoBehaviour:
   speedlist:
   - 3
   enemySpeed: 0
+  isPlayerClose: 0
 --- !u!114 &2527950839028704538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cac88cdda0fa84a8881281f580c59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wispBossChance: []
   damageAmount: 1
   apply: 0
   type: 0
@@ -591,12 +593,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wisp: {fileID: 3087481702883952580, guid: 3dd3cab22da44f146b14c05a7566ffa5, type: 3}
   enemys:
-  - {fileID: 425066111318427963}
-  - {fileID: 425066111318427963}
-  - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
-  - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
-  - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
-  - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
+  - {fileID: 425066111318427963, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
+  - {fileID: 425066111318427963, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}
   - {fileID: 425066111318427963, guid: 06727d6cd7c91c245be1172ba86f40b3, type: 3}

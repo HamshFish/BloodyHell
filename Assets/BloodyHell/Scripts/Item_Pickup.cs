@@ -18,5 +18,10 @@ public class Item_Pickup : MonoBehaviour
             damageReceiver.Heal(100);
             Destroy(other.gameObject);
         }
+        else if (other.gameObject.tag == "Wisp2")
+        {
+            damageReceiver.Heal(250);
+            Destroy(other.gameObject);
+        }
     }
 }

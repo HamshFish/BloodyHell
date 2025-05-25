@@ -146,8 +146,8 @@ public class Movement : MonoBehaviour
 
         Vector2 inputThisFrame = new Vector2();
 
-        inputThisFrame.x = Input.GetAxis("Horizontal");
-        inputThisFrame.y = Input.GetAxis("Vertical");
+        inputThisFrame.x = Input.GetAxisRaw("Horizontal");
+        inputThisFrame.y = Input.GetAxisRaw("Vertical");
 
         Vector3 moveDirection = new Vector3(inputThisFrame.x, 0, inputThisFrame.y);
 
