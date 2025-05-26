@@ -934,7 +934,7 @@ MonoBehaviour:
   capsuleCollider: {fileID: 8534806888102310283}
   cam: {fileID: 3338258677249317740}
   walkSpeed: 5
-  sprintSpeed: 50
+  sprintSpeed: 10
   currentSpeed: 0
   jumpPower: 10
   gravityUp: 15
