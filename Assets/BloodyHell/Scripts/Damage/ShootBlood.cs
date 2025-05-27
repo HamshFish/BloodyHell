@@ -9,6 +9,7 @@ public class ShootBlood : MonoBehaviour
     private ParticleSystem blood;
     private DamageSource damage;
     [SerializeField] private TMP_Text text;
+    [SerializeField] private Animator anim;
 
 
     [Header("Power")]
@@ -50,6 +51,8 @@ public class ShootBlood : MonoBehaviour
             Debug.Log("Clicked");
             Projectile();
             text.text = roll.ToString();
+            anim.Play("RollAnim");
+            
         }
         
     }
