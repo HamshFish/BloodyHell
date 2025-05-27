@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -11,10 +12,6 @@ public class DamageReceiver : MonoBehaviour
     [Header("Health")]
     [SerializeField] private float healthMax;
     [SerializeField] public float currentHealth;
-
-    //private Color _100health = Color.green;
-    //private Color _25health = Color.red;
-
 
     public UnityEvent onOutOfHealth;
 
@@ -32,6 +29,7 @@ public class DamageReceiver : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, healthMax);
 
         healthColor.Apply();
+
 
         // if we run out of health
         if (currentHealth <= 0)
@@ -83,4 +81,5 @@ public class DamageReceiver : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
 }

@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 5735101788575675938}
   m_Layer: 8
   m_Name: TankEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   healthColor: {fileID: 2202900153845331733}
   healthMax: 2000
   currentHealth: 0
+  particle: {fileID: 0}
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:

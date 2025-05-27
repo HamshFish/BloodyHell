@@ -12596,6 +12596,26 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 270205193}
+    - target: {fileID: 7654150865901123597, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: bloodGO
+      value: 
+      objectReference: {fileID: 2640637541376924839, guid: 183a7ac886612cf4aa09ee06d3639a80, type: 3}
+    - target: {fileID: 7654150865901123597, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: maxRoll
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654150865901123597, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: minRoll
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654150865901123597, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: nat1BloodGo
+      value: 
+      objectReference: {fileID: 2640637541376924839, guid: cb9ad1f7fd65a40469a25bfd8abd05f4, type: 3}
+    - target: {fileID: 7654150865901123597, guid: a0d126ec3740add439ab213089e445d9, type: 3}
+      propertyPath: nat20BloodGo
+      value: 
+      objectReference: {fileID: 2640637541376924839, guid: 9d43055059c54ee43acb20b6332bbcb3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

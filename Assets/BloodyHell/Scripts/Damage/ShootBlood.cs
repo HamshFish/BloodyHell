@@ -5,8 +5,13 @@ public class ShootBlood : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject bloodGO;
+    [SerializeField] private GameObject nat1BloodGo;
+    [SerializeField] private GameObject nat20BloodGo;
     [SerializeField] private DamageReceiver damageReceiver;
+
     private ParticleSystem blood;
+    private ParticleSystem nat1Blood;
+    private ParticleSystem nat20Blood;
     private DamageSource damage;
     [SerializeField] private TMP_Text text;
     [SerializeField] private Animator anim;
@@ -24,6 +29,8 @@ public class ShootBlood : MonoBehaviour
     private void Start()
     {
         blood = bloodGO.GetComponentInChildren<ParticleSystem>();
+        nat1Blood = nat1BloodGo.GetComponentInChildren<ParticleSystem>();
+        nat20Blood = nat20BloodGo.GetComponentInChildren<ParticleSystem>();
     }
 
 
@@ -37,9 +44,21 @@ public class ShootBlood : MonoBehaviour
             //Debug.Log("setting shoot power to roll");
             shootPower = d20Rolls[roll]; // put roll into damage
             //Debug.Log("spawning particle");
-            ParticleSystem spawnedBlood = Instantiate(blood, transform.position,  transform.rotation * Quaternion.Euler(110f,0f,0f)); // spawn partricle
-            //Debug.Log("taking self damage");
-            damageReceiver.TakeSelfDamage(30);
+            if (roll == 1)
+            {
+                ParticleSystem spawnedNat1Blood = Instantiate(nat1Blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f)); // spawn partricle
+            }
+            else if (roll == 20)
+            {
+               ParticleSystem spawnedNat20Blood = Instantiate(nat20Blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f));
+            }
+            else
+            {
+                ParticleSystem spawnedBlood = Instantiate(blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f));
+            }
+            
+                //Debug.Log("taking self damage");
+                damageReceiver.TakeSelfDamage(30);
         }
         
     }
