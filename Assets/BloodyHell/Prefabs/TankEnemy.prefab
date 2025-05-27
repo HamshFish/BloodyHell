@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d112f49df8399f44b463a4c5a3b33e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wisp: {fileID: 3087481702883952580, guid: 3dd3cab22da44f146b14c05a7566ffa5, type: 3}
+  wisp: {fileID: 3087481702883952580, guid: 5de607c4b2fb2b84197056b824b7e1ea, type: 3}
   enemys:
   - {fileID: 425066111318427963, guid: 73a66e4d175915c4b813dafdd5988184, type: 3}
   - {fileID: 425066111318427963, guid: a91c9a22f30a29e4f8eb7353024e35f0, type: 3}
@@ -603,4 +603,8 @@ MonoBehaviour:
   - {fileID: 425066111318427963, guid: a91c9a22f30a29e4f8eb7353024e35f0, type: 3}
   - {fileID: 425066111318427963, guid: a91c9a22f30a29e4f8eb7353024e35f0, type: 3}
   - {fileID: 425066111318427963, guid: a91c9a22f30a29e4f8eb7353024e35f0, type: 3}
-  extraEnemyChance: []
+  extraEnemyChance:
+  - {fileID: 425066111318427963, guid: 7531b3ce0058b4c429f212945e8b343b, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}

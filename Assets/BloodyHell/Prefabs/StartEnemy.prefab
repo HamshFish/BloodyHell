@@ -258,8 +258,6 @@ MonoBehaviour:
   - 7
   - 7
   - 7
-  - 9
-  - 9
   enemySpeed: 0
   isPlayerClose: 0
 --- !u!114 &2527950839028704538
@@ -645,8 +643,8 @@ MonoBehaviour:
   - {fileID: 425066111318427963}
   extraEnemyChance:
   - {fileID: 425066111318427963}
-  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
-  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 425066111318427963}
+  - {fileID: 425066111318427963, guid: 7531b3ce0058b4c429f212945e8b343b, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}

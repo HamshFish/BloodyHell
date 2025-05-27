@@ -41,6 +41,8 @@ public class DamageReceiver : MonoBehaviour
         }
     }
 
+    
+
     public void TakeSelfDamage(float damage)
     {
         // our new health after taking damage is our old health - damage, not going below 0

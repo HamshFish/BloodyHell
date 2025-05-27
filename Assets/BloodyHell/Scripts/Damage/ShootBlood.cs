@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ShootBlood : MonoBehaviour
@@ -7,7 +8,8 @@ public class ShootBlood : MonoBehaviour
     [SerializeField] private DamageReceiver damageReceiver;
     private ParticleSystem blood;
     private DamageSource damage;
-    
+    [SerializeField] private TMP_Text text;
+
 
     [Header("Power")]
     public int shootPower;
@@ -47,6 +49,7 @@ public class ShootBlood : MonoBehaviour
         {
             Debug.Log("Clicked");
             Projectile();
+            text.text = roll.ToString();
         }
         
     }
