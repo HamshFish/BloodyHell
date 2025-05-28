@@ -46,15 +46,15 @@ public class ShootBlood : MonoBehaviour
             //Debug.Log("spawning particle");
             if (roll == 1)
             {
-                ParticleSystem spawnedNat1Blood = Instantiate(nat1Blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f)); // spawn partricle
+                ParticleSystem spawnedNat1Blood = Instantiate(nat1Blood, transform.position, transform.rotation * Quaternion.Euler(0f, 0f, 0f)); // spawn partricle
             }
             else if (roll == 20)
             {
-               ParticleSystem spawnedNat20Blood = Instantiate(nat20Blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f));
+               ParticleSystem spawnedNat20Blood = Instantiate(nat20Blood, transform.position, transform.rotation * Quaternion.Euler(0f, 0f, 0f));
             }
             else
             {
-                ParticleSystem spawnedBlood = Instantiate(blood, transform.position, transform.rotation * Quaternion.Euler(110f, 0f, 0f));
+                ParticleSystem spawnedBlood = Instantiate(blood, transform.position, transform.rotation * Quaternion.Euler(0f, 0f, 0f));
             }
             
                 //Debug.Log("taking self damage");
