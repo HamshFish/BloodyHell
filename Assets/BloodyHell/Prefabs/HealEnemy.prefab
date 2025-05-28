@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2527950839028704538}
   - component: {fileID: 2202900153845331733}
   - component: {fileID: 5735101788575675938}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: HealEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -141,7 +141,6 @@ MonoBehaviour:
   healthColor: {fileID: 2202900153845331733}
   healthMax: 1000
   currentHealth: 0
-  particle: {fileID: 0}
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:
@@ -346,7 +345,7 @@ GameObject:
   - component: {fileID: 7415571241577867518}
   - component: {fileID: 2765813285381265}
   - component: {fileID: 5370984509599148515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5281,7 +5280,7 @@ GameObject:
   - component: {fileID: 5980543400837668118}
   - component: {fileID: 955213707006394539}
   - component: {fileID: 1235002335126562763}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5406,7 +5405,7 @@ GameObject:
   - component: {fileID: 4553207487990246067}
   - component: {fileID: 5519791679221750970}
   - component: {fileID: 4347383658163022956}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7957,7 +7956,7 @@ GameObject:
   - component: {fileID: 7534937290277101081}
   - component: {fileID: 83638311260256960}
   - component: {fileID: 4285629568545841986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10508,7 +10507,7 @@ GameObject:
   - component: {fileID: 3550610546759660679}
   - component: {fileID: 5633824636545335424}
   - component: {fileID: 6849900143025194441}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13059,7 +13058,7 @@ GameObject:
   - component: {fileID: 2382580266066011730}
   - component: {fileID: 4839660053962898024}
   - component: {fileID: 5345357328831017930}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15610,7 +15609,7 @@ GameObject:
   - component: {fileID: 5825330130862644412}
   - component: {fileID: 2625817367440088362}
   - component: {fileID: 3079590788118743318}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18161,7 +18160,7 @@ GameObject:
   - component: {fileID: 1331592918793258899}
   - component: {fileID: 8273768612408755722}
   - component: {fileID: 1771295445980152481}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18283,7 +18282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1877790480150308244}
   - component: {fileID: 8713424867105955824}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

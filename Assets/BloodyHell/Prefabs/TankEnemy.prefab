@@ -134,7 +134,6 @@ MonoBehaviour:
   healthColor: {fileID: 2202900153845331733}
   healthMax: 2000
   currentHealth: 0
-  particle: {fileID: 0}
   onOutOfHealth:
     m_PersistentCalls:
       m_Calls:
@@ -606,6 +605,13 @@ MonoBehaviour:
   - {fileID: 425066111318427963, guid: a91c9a22f30a29e4f8eb7353024e35f0, type: 3}
   extraEnemyChance:
   - {fileID: 425066111318427963, guid: 7531b3ce0058b4c429f212945e8b343b, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
+  - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
   - {fileID: 8800438057984961831, guid: 78e32b6ed08c5e740801eef59684f197, type: 3}
