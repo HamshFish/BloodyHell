@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(gameObject.transform.position, moveToObject.transform.position) <= 50f)
+        if (Vector3.Distance(gameObject.transform.position, moveToObject.transform.position) <= 10000f)
         {
             isPlayerClose = true;
         }
