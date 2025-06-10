@@ -49,7 +49,7 @@ public class Stamina : MonoBehaviour
             {
                 currentStamina += staminaRegen * Time.deltaTime;
 
-                if(currentStamina >= 50)
+                if(currentStamina >= maxStamina)
                 {
                     hasRegenerated = true;
                 }
