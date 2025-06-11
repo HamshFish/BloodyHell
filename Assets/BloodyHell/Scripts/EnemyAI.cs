@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float[] speedlist = new float[5];
     public int enemySpeed;
     [HideInInspector] public bool isPlayerClose;
-    public float alertDistance;
 
     void Start()
     {
@@ -24,7 +23,7 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(gameObject.transform.position, moveToObject.transform.position) <= alertDistance)
+        if (Vector3.Distance(gameObject.transform.position, moveToObject.transform.position) <= 10000f)
         {
             isPlayerClose = true;
         }
